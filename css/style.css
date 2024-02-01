@@ -194,6 +194,23 @@ main{
   margin-bottom: 30px;
 }
 
+/* ABOUT US */
+#about-us .row{
+  flex-wrap: wrap;
+  padding-top: 50px;
+  height: 100%;
+}
+
+#about-us .col{
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 1.5rem;
+}
+
+#about-us .col:first-child{
+  height: 700px;
+}
 
 /* FOOTER */
 
@@ -233,6 +250,20 @@ main{
   #features .col{
     width: calc(97% / 2);
   }
+
+  /* ABOUT US */
+
+  #about-us .row{
+    justify-content: space-between;
+  }
+
+  #about-us .row .col:first-child{
+      width: 55%;
+    }
+
+  #about-us .row .col:nth-child(2){
+    width: 40%;
+  }
 }
 
 /* Desktop */
@@ -264,5 +295,15 @@ main{
 
   #features .col{
     width: calc(96% / 3);
+  }
+
+  /* ABOUT US */
+
+  #about-us .row .col:first-child{
+    width: 66%;
+  }
+
+  #about-us .row .col:nth-child(2){
+  width: 32%;
   }
 }
