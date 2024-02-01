@@ -6,3 +6,127 @@
 img{
   max-width: 100%;
 }
+/* Custom properties */
+:root{
+  --blu1:#2083F7;
+  --blu2:#B5DDFB;
+  --blutext:#3F93F7;
+  --primary-color:#9792E4;
+}
+
+/* Utility */
+.d-flex{
+  display: flex;
+}
+
+.mb-xs{
+  margin-bottom: 30px;
+}
+.mb-s{
+  margin-bottom: 50px;
+}
+.mb-m{
+  margin-bottom: 75px;
+}
+.mb-l{
+  margin-bottom: 100px;
+}
+
+.mt-xs{
+  margin-top: 30px;
+}
+.mt-s{
+  margin-top: 50px;
+}
+.mt-m{
+  margin-top: 75px;
+}
+.mt-l{
+  margin-top: 100px;
+}
+
+.debug{
+  border: 1px dashed yellow
+}
+/* BOTTONI */
+.btn{
+  border-radius: 2rem;
+}
+
+/* CONTAINER */
+.container{
+  margin: 0 auto;
+  width: 90%;
+  
+  height: 100%;
+}
+
+/* Header */
+header{
+  background-color: var(--blu1);
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color: white;
+}
+
+nav{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+  /* display: none; */
+}
+.menu ul{
+  /*TODO: display: flex; da aggiungere al breakpoint */
+  display: none;
+  list-style: none;
+}
+
+.menu ul a{
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+
+.menu .btn{
+  padding:6px 10px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.512);
+}
+
+/* MAIN */
+main{
+  padding-top: 80px;
+}
+
+
+/* FOOTER */
+
+
+/************************************************
+    SOLUZIONE RESPONSIVE
+ ************************************************/
+
+/* Tablet */
+@media screen and (min-width:768px){
+  .container{
+    width: 750px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width:1200px) {
+  .container{
+    width: 1200px;
+  }
+  .menu ul{
+    display: flex;
+  }
+  .hamburger{
+    display: none;
+  }
+}
