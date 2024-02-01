@@ -46,7 +46,7 @@ img{
 }
 
 .debug{
-  border: 1px dashed yellow
+  border: 2px dashed yellow
 }
 /* BOTTONI */
 .btn{
@@ -57,7 +57,6 @@ img{
 .container{
   margin: 0 auto;
   width: 85%;
-  
   height: 100%;
 }
 
@@ -121,14 +120,6 @@ main{
   border-radius: 1.5rem;
 }
 
-/* #services .row .col:first-child{
-  width: 65%;
-}
-
-#services .row .col:nth-child(2){
-  width: 32%;
-} */
-
 /* PLANNING */
 #planning{
   height: 1000px;
@@ -152,6 +143,57 @@ main{
   /* TODO: creare una card e posizionarla in fondo al col e dare sfondo bianco alla card */
   background-color: white;
 }
+
+/* TESTIMONIALS */
+#testimonials{
+  height: 1600px;
+}
+
+#testimonials .row{
+  flex-wrap: wrap;
+  padding-top: 50px;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+#testimonials .col:first-child{
+  background-color: white;
+}
+
+#testimonials .col{
+  width: 100%;
+  height: 350px;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  margin-bottom: 30px;
+}
+
+/* FEATURES */
+#features{
+  background-color: var(--primary-color);
+}
+
+#features h3{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  padding-top: 50px;
+}
+
+#features .row{
+  flex-wrap: wrap;
+  padding-top: 50px;
+  height: 100%;
+  padding-bottom: 50px;
+}
+#features .col{
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  border-radius: 1.5rem;
+  margin-bottom: 30px;
+}
+
 
 /* FOOTER */
 
@@ -181,12 +223,22 @@ main{
   #services .row .col:nth-child(2){
     width: 32%;
   }
+
+  /* FEATURES */
+
+  #features .row{
+    justify-content: space-between;
+  }
+
+  #features .col{
+    width: calc(97% / 2);
+  }
 }
 
 /* Desktop */
 @media screen and (min-width:1200px) {
   .container{
-    width: 1200px;
+    width: 1100px;
   }
 
   .menu ul{
@@ -206,5 +258,11 @@ main{
   #planning .col{
     width: 40%;
     height: 550px;
+  }
+
+  /* FEATURES */
+
+  #features .col{
+    width: calc(96% / 3);
   }
 }
