@@ -9,7 +9,7 @@ img{
 /* Custom properties */
 :root{
   --blu1:#2083F7;
-  --blu2:#B5DDFB;
+  --blu2:#a5d5f9;
   --blutext:#3F93F7;
   --primary-color:#9792E4;
 }
@@ -103,6 +103,34 @@ main{
   padding-top: 80px;
 }
 
+/* SERVICES */
+/* FIXME: potrei levare il #services */
+#services{
+  height: 500px;
+}
+
+#services .row{
+  flex-wrap: wrap;
+  padding-top: 50px;
+  height: 80%;
+}
+
+#services .col{
+  height: 500px;
+  background-color:var(--blu2);
+  width: 100%;
+  margin-bottom: 20px;
+  /* width: calc(96% / 3);
+  margin: 0 15px 15px 0; */
+}
+
+/* #services .row .col:first-child{
+  width: 65%;
+}
+
+#services .row .col:nth-child(2){
+  width: 32%;
+} */
 
 /* FOOTER */
 
@@ -114,7 +142,20 @@ main{
 /* Tablet */
 @media screen and (min-width:768px){
   .container{
-    width: 750px;
+    width: 760px;
+  }
+
+  #services .col{
+    width: calc(92% / 3);
+    margin: 0 20px 20px 0;
+  }
+
+  #services .row .col:first-child{
+    width: 64%;
+  }
+
+  #services .row .col:nth-child(2){
+    width: 30%;
   }
 }
 
@@ -128,5 +169,12 @@ main{
   }
   .hamburger{
     display: none;
+  }
+  #services .row .col:first-child{
+    width: 63%;
+  }
+
+  #services .row .col:nth-child(2){
+    width: 31%;
   }
 }
