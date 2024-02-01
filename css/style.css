@@ -104,19 +104,17 @@ main{
 }
 
 /* SERVICES */
+
 /* FIXME: potrei levare il #services */
-#services{
-  height: 500px;
-}
 
 #services .row{
   flex-wrap: wrap;
   padding-top: 50px;
-  height: 80%;
+  height: 100%;
 }
 
 #services .col{
-  height: 500px;
+  height: 400px;
   background-color:var(--blu2);
   width: 100%;
   margin-bottom: 20px;
@@ -131,6 +129,30 @@ main{
   width: 32%;
 } */
 
+/* PLANNING */
+#planning{
+  height: 1000px;
+  background-color: var(--primary-color);
+}
+
+#planning .row{
+  flex-wrap: wrap;
+  padding-top: 50px;
+  height: 100%;
+}
+
+#planning .col{
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 1.5rem;
+}
+
+#planning .col:last-child{
+  /* TODO: creare una card e posizionarla in fondo al col e dare sfondo bianco alla card */
+  background-color: white;
+}
+
 /* FOOTER */
 
 
@@ -144,17 +166,20 @@ main{
     width: 760px;
   }
 
+  #services .row{
+    justify-content: space-between;
+  }
+
   #services .col{
-    width: calc(92% / 3);
-    margin: 0 10px 20px 10px;
+    width: calc(97% / 3);
   }
 
   #services .row .col:first-child{
-    width: 64%;
+    width: 66%;
   }
 
   #services .row .col:nth-child(2){
-    width: 30%;
+    width: 32%;
   }
 }
 
@@ -172,16 +197,14 @@ main{
     display: none;
   }
 
-  #services .col{
-    width: calc(95% / 3);
-    margin: 0 10px 20px 10px;
-  }
+/* PLANNING */
 
-  #services .row .col:first-child{
-    width: 65%;
+  #planning .row{
+    justify-content: center;
   }
-
-  #services .row .col:nth-child(2){
-    width: 31%;
+  
+  #planning .col{
+    width: 40%;
+    height: 550px;
   }
 }
