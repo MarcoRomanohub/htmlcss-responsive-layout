@@ -222,6 +222,10 @@ main{
   color: white;
 }
 
+#planning .col:last-child p{
+  font-style: italic;
+}
+
 #planning .btn.circle i{
   background-color: var(--primary-color);
   border-radius: 50%;
@@ -240,13 +244,53 @@ main{
   padding-bottom: 50px;
 }
 
+#testimonials .img img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#testimonials .img{
+  text-align: center;
+  margin: 10px auto;
+}
+
+#testimonials .text{
+  width: 95%;
+  margin: 10px auto;
+  color: white;
+}
+
+#testimonials .text h2{
+  margin: 20px 0;
+  color: var(--primary-color);
+}
+
+#testimonials .text h4{
+  margin: 10px 0;
+  text-align: center;
+}
+
+#testimonials .text h5{
+  color: rgba(0, 0, 0, 0.409);
+}
+
+#testimonials .text p{
+  font-size: .8rem;
+}
+
 #testimonials .col:first-child{
   background-color: white;
 }
 
+#testimonials .col:first-child p{
+  color: black;
+}
+
 #testimonials .col{
   width: 100%;
-  height: 350px;
+  height: 310px;
   background-color: var(--primary-color);
   border-radius: 2rem;
   margin-bottom: 30px;
@@ -323,6 +367,27 @@ main{
 
   #demo .row .col:nth-child(2){
     width: 32%;
+  }
+
+  /* TESTIMONIALS */
+
+  #testimonials .card{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+  }
+
+  #testimonials .card .img{
+    width: 30%;
+  }
+
+  #testimonials .card .text{
+    width: 70%;
+  }
+
+  #testimonials .text h4{
+    text-align: left;
   }
 
   /* FEATURES */
