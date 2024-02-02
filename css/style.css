@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'PT Sans', sans-serif;
+}
 img{
   max-width: 100%;
 }
@@ -45,12 +48,18 @@ img{
   margin-top: 100px;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .debug{
   border: 2px dashed yellow
 }
 /* BOTTONI */
 .btn{
   border-radius: 2rem;
+  text-decoration: none;
+  letter-spacing: .2rem;
 }
 
 /* CONTAINER */
@@ -101,23 +110,58 @@ nav{
 main{
   padding-top: 80px;
 }
+.card{
+  width: 85%;
+  margin: 0 auto;
+}
 
-/* SERVICES */
+/* DEMO */
 
-/* FIXME: potrei levare il #services */
+/* FIXME: potrei levare il #demo */
 
-#services .row{
+#demo .row{
   flex-wrap: wrap;
   padding-top: 50px;
   height: 100%;
 }
 
-#services .col{
-  height: 400px;
+#demo .col{
+  /* height: 400px; */
   background-color:var(--blu2);
   width: 100%;
   margin-bottom: 20px;
   border-radius: 1.5rem;
+}
+
+#demo .card{
+  padding-top: 20px;
+} 
+
+#demo .card h3{
+  margin-bottom: 25px;
+  color: var(--blu1);
+}
+
+#demo .card p{
+  font-size: .8rem;
+  color: #4D5D6B;
+  margin-bottom: 30px;
+}
+
+#demo .card .btn{
+  background-color: var(--blu1);
+  color: white;
+  padding: 8px 35px;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+#demo .card .text{
+
+}
+
+#demo .card .img{
+
 }
 
 /* PLANNING */
@@ -225,19 +269,19 @@ main{
     width: 760px;
   }
 
-  #services .row{
+  #demo .row{
     justify-content: space-between;
   }
 
-  #services .col{
+  #demo .col{
     width: calc(97% / 3);
   }
 
-  #services .row .col:first-child{
+  #demo .row .col:first-child{
     width: 66%;
   }
 
-  #services .row .col:nth-child(2){
+  #demo .row .col:nth-child(2){
     width: 32%;
   }
 
